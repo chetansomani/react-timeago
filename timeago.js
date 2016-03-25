@@ -93,8 +93,8 @@ module.exports = React.createClass(
       var value, unit
 
       if(seconds < 60){
-        value = Math.round(seconds)
-        unit = 'second'
+        value = 0 //Math.round(seconds)
+        unit = 'minute'
       } else if(seconds < 60*60) {
         value = Math.round(seconds/60)
         unit = 'minute'
